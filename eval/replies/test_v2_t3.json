@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t3",
+  "reply": "{\n  \"reasoning\": \"A budget-conscious college student who streams Netflix at night and plays some casual games.\",\n  \"needs\": { \"camera\": 0.1, \"performance\": 0.4, \"battery\": 0.4, \"audio\": 0.4, \"storage\": 0.1, \"connectivity\": 0.1, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.1 },\n  \"budget\": 28000,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 2514
+}

@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t2",
+  "reply": "{\n  \"reasoning\": \"A field geologist works outdoors in rain and mud with no network coverage and needs to take air and heat sensor readings on site.\",\n  \"needs\": { \"camera\": 0.4, \"performance\": 0.1, \"battery\": 0.4, \"audio\": 0.1, \"storage\": 0.4, \"connectivity\": 0.7, \"durability\": 0.7, \"sensing\": 1.0, \"portability\": 0.1 },\n  \"budget\": null,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 3646
+}

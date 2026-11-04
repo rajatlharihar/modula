@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t12",
+  "reply": "{\n  \"reasoning\": \"A content creator who films YouTube Shorts and records podcasts, so the phone is mainly a camera and audio recording tool that also needs room for footage.\",\n  \"needs\": { \"camera\": 1.0, \"performance\": 0.4, \"battery\": 0.1, \"audio\": 0.7, \"storage\": 0.7, \"connectivity\": 0.1, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.1 },\n  \"budget\": 70000,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 2484
+}

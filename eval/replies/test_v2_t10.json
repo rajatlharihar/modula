@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t10",
+  "reply": "{\n  \"reasoning\": \"This person uses the phone rarely, mainly for calls and map navigation while traveling, and wants it cheap and compact.\",\n  \"needs\": { \"camera\": 0.1, \"performance\": 0.1, \"battery\": 0.4, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 0.4, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.7 },\n  \"budget\": 22000,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 2210
+}

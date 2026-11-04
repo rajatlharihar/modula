@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t2",
+  "reply": "{\"reasoning\":\"Uses the phone as a field instrument on remote sites in rain and mud, with no network, and relies on air and heat sensor readings.\",\"needs\":{\"camera\":0.1,\"performance\":0.1,\"battery\":0.7,\"audio\":0.1,\"storage\":0.4,\"connectivity\":1.0,\"durability\":0.7,\"sensing\":1.0,\"portability\":0.1},\"budget\":null,\"must_have\":[\"net-sat\",\"sen-env\"]}",
+  "tier": "quick",
+  "ms": 2556
+}

@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t16",
+  "reply": "{\"reasoning\": \"They are a photographer who travels, so they rely on the phone for high-quality photos and video on the road and need it to last through long days away from chargers.\", \"needs\": { \"camera\": 1.0, \"performance\": 0.4, \"battery\": 0.7, \"audio\": 0.4, \"storage\": 0.4, \"connectivity\": 0.4, \"durability\": 0.4, \"sensing\": 0.4, \"portability\": 0.4 }, \"budget\": 100000, \"must_have\": []}",
+  "tier": "quick",
+  "ms": 3144
+}

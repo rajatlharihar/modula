@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t8",
+  "reply": "{\n  \"reasoning\": \"Plays graphically demanding mobile Genshin Impact and streams gameplay over 5G, so sustained processing power, network quality, and battery endurance during long sessions matter most.\",\n  \"needs\": { \"camera\": 0.1, \"performance\": 1.0, \"battery\": 0.4, \"audio\": 0.1, \"storage\": 0.4, \"connectivity\": 0.7, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.1 },\n  \"budget\": null,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 3146
+}

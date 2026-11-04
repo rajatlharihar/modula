@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v1",
+  "id": "t2",
+  "reply": "```json\n{\n  \"needs\": {\n    \"camera\": 0.2,\n    \"performance\": 0.3,\n    \"battery\": 0.7,\n    \"audio\": 0.1,\n    \"storage\": 0.2,\n    \"connectivity\": 0.7,\n    \"durability\": 0.95,\n    \"sensing\": 0.95,\n    \"portability\": 0.5\n  },\n  \"budget\": null,\n  \"must_have\": [\"arm-rug\", \"sen-env\", \"net-sat\"]\n}\n```",
+  "tier": "quick",
+  "ms": 3000
+}

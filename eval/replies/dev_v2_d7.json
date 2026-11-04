@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v2",
+  "id": "d7",
+  "reply": "{\n  \"reasoning\": \"This person is a travel vlogger who films daily in 4K, edits on the phone, and flies often, so they need strong video capture, editing power, storage, and a light body.\",\n  \"needs\": { \"camera\": 1.0, \"performance\": 0.7, \"battery\": 0.4, \"audio\": 0.1, \"storage\": 0.7, \"connectivity\": 0.4, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.7 },\n  \"budget\": null,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 4038
+}

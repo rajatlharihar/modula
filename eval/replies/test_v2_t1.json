@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t1",
+  "reply": "{\n  \"reasoning\": \"This person is a street photographer who shoots mostly at night and does not game, so the phone is primarily a low-light camera.\",\n  \"needs\": { \"camera\": 1.0, \"performance\": 0.1, \"battery\": 0.4, \"audio\": 0.1, \"storage\": 0.4, \"connectivity\": 0.1, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.4 },\n  \"budget\": null,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 3051
+}

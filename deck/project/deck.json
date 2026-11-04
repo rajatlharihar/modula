@@ -1,0 +1,15 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-11-02T16:30:00Z" },
+  "lists": "css",
+  "title": "Modula Class Presentation",
+  "order": ["intro", "problem", "method", "results"],
+  "cover": "intro",
+  "sections": {
+    "s1": { "description": "What Modula is, why choosing a modular phone is hard, how the Python system works and what the evaluation found", "start": "intro" }
+  },
+  "faces": {
+    "barlow": { "family": "Barlow", "href": "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" }
+  },
+  "designSystems": []
+}

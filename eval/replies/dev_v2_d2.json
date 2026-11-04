@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v2",
+  "id": "d2",
+  "reply": "{\n  \"reasoning\": \"A competitive BGMI player who plays long sessions and needs consistent frame rates above all else, so sustained gaming performance and battery endurance matter most.\",\n  \"needs\": { \"camera\": 0.1, \"performance\": 1.0, \"battery\": 0.7, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 0.4, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.1 },\n  \"budget\": null,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 3561
+}

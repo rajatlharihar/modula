@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t4",
+  "reply": "{\"reasoning\": \"A day trader who relies on constant, fast 5G connectivity for market data and trades, and needs the phone to respond without lag.\", \"needs\": { \"camera\": 0.1, \"performance\": 0.7, \"battery\": 0.1, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 1.0, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.1 }, \"budget\": 80000, \"must_have\": []}",
+  "tier": "quick",
+  "ms": 2253
+}

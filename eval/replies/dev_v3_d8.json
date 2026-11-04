@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v3",
+  "id": "d8",
+  "reply": "{\"reasoning\":\"Light daily use: writing coding notes and watching YouTube, with no interest in photos and a preference for good battery life.\",\"needs\":{\"camera\":0.0,\"performance\":0.4,\"battery\":0.7,\"audio\":0.4,\"storage\":0.1,\"connectivity\":0.4,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.1},\"budget\":30000,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 2517
+}

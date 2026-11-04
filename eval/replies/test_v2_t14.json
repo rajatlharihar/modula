@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t14",
+  "reply": "{\n  \"reasoning\": \"A frequent-flyer consultant who needs a light, responsive phone for travel and client work and doesn't care about the camera.\",\n  \"needs\": { \"camera\": 0.0, \"performance\": 0.7, \"battery\": 0.1, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 0.1, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 1.0 },\n  \"budget\": null,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 2375
+}

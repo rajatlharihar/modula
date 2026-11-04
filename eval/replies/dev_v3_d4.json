@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v3",
+  "id": "d4",
+  "reply": "{\"reasoning\":\"Guides treks in Ladakh with no mobile signal for days at a time, and the phone is regularly dropped on rocks.\",\"needs\":{\"camera\":0.1,\"performance\":0.1,\"battery\":0.7,\"audio\":0.1,\"storage\":0.1,\"connectivity\":1.0,\"durability\":1.0,\"sensing\":0.1,\"portability\":0.1},\"budget\":null,\"must_have\":[\"net-sat\"]}",
+  "tier": "quick",
+  "ms": 2458
+}

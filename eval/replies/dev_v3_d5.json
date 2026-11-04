@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v3",
+  "id": "d5",
+  "reply": "{\"reasoning\":\"A 68-year-old with a heart condition who needs to track ECG readings, with a large battery that lasts and a light phone that's easy to carry.\",\"needs\":{\"camera\":0.1,\"performance\":0.1,\"battery\":0.7,\"audio\":0.1,\"storage\":0.1,\"connectivity\":0.1,\"durability\":0.1,\"sensing\":1.0,\"portability\":0.7},\"budget\":null,\"must_have\":[\"sen-health\"]}",
+  "tier": "quick",
+  "ms": 2313
+}

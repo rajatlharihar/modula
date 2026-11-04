@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t8",
+  "reply": "{\"reasoning\":\"Plays demanding mobile Genshin and streams gameplay over 5G, so needs strong processing, fast uplink, and battery for long sessions; budget is unconstrained.\",\"needs\":{\"camera\":0.1,\"performance\":1.0,\"battery\":0.7,\"audio\":0.4,\"storage\":0.4,\"connectivity\":0.7,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.1},\"budget\":null,\"must_have\":[\"net-mm\"]}",
+  "tier": "quick",
+  "ms": 3315
+}

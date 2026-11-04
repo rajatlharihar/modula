@@ -1,0 +1,18 @@
+[theme]
+base = "light"
+primaryColor = "#2F4A47"
+backgroundColor = "#E8EBE6"
+secondaryBackgroundColor = "#D3D8D1"
+textColor = "#2F4A47"
+borderColor = "#B7C0B8"
+yellowColor = "#FFB400"
+yellowBackgroundColor = "#FFE7A8"
+yellowTextColor = "#2F4A47"
+baseRadius = "small"
+font = "Barlow:https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

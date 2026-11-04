@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t3",
+  "reply": "{\"reasoning\":\"A college student on a tight budget who streams Netflix at night and plays casual games.\",\"needs\":{\"camera\":0.1,\"performance\":0.4,\"battery\":0.7,\"audio\":0.4,\"storage\":0.1,\"connectivity\":0.4,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.1},\"budget\":28000,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 2452
+}

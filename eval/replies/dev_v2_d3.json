@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v2",
+  "id": "d3",
+  "reply": "{\"reasoning\": \"Uses the phone mainly for WhatsApp messaging and voice calls, with no interest in advanced features.\", \"needs\": { \"camera\": 0.1, \"performance\": 0.1, \"battery\": 0.1, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 0.1, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.1 }, \"budget\": 25000, \"must_have\": [] }",
+  "tier": "quick",
+  "ms": 2343
+}

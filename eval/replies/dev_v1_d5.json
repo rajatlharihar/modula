@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v1",
+  "id": "d5",
+  "reply": "```json\n{\n  \"ratings\": {\n    \"camera\": 0.1,\n    \"performance\": 0.3,\n    \"battery\": 0.9,\n    \"audio\": 0.2,\n    \"storage\": 0.2,\n    \"connectivity\": 0.4,\n    \"durability\": 0.4,\n    \"sensing\": 1.0,\n    \"portability\": 0.9\n  },\n  \"needs\": [\"sen-health\", \"b-6000\"],\n  \"budget\": null,\n  \"must_have\": [\"sen-health\"]\n}\n```",
+  "tier": "quick",
+  "ms": 3505
+}

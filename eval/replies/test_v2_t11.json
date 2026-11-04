@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t11",
+  "reply": "{\"reasoning\": \"A night-shift nurse who needs the phone to last a full 14-hour shift and wants to check their own vitals during it.\", \"needs\": { \"camera\": 0.1, \"performance\": 0.1, \"battery\": 1.0, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 0.1, \"durability\": 0.1, \"sensing\": 0.7, \"portability\": 0.1 }, \"budget\": null, \"must_have\": [] }",
+  "tier": "quick",
+  "ms": 2291
+}

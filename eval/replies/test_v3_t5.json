@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t5",
+  "reply": "{\"reasoning\":\"A marathon runner who wants the lightest phone possible and needs continuous heart rate and blood oxygen monitoring during training and races, with occasional sweat and rain exposure on long runs.\",\"needs\":{\"camera\":0.1,\"performance\":0.1,\"battery\":0.4,\"audio\":0.1,\"storage\":0.1,\"connectivity\":0.1,\"durability\":0.4,\"sensing\":1.0,\"portability\":1.0},\"budget\":null,\"must_have\":[\"sen-health\"]}",
+  "tier": "quick",
+  "ms": 2426
+}

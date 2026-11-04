@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v1",
+  "id": "t16",
+  "reply": "```json\n{\n  \"needs\": {\n    \"camera\": 1.0,\n    \"performance\": 0.6,\n    \"battery\": 0.8,\n    \"audio\": 0.4,\n    \"storage\": 0.5,\n    \"connectivity\": 0.6,\n    \"durability\": 0.5,\n    \"sensing\": 0.3,\n    \"portability\": 0.7\n  },\n  \"budget\": {\n    \"amount\": 100000,\n    \"currency\": \"INR\",\n    \"display\": \"₹1,00,000\"\n  },\n  \"must_have\": [\"cam-1in\", \"aux-tele\", \"aux-uw\", \"b-6000\"]\n}\n```",
+  "tier": "quick",
+  "ms": 3724
+}

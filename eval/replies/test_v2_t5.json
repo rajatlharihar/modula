@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t5",
+  "reply": "{\n  \"reasoning\": \"A marathon runner who wants a very light phone that tracks heart rate and blood oxygen during training.\",\n  \"needs\": { \"camera\": 0.1, \"performance\": 0.1, \"battery\": 0.7, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 0.1, \"durability\": 0.4, \"sensing\": 1.0, \"portability\": 1.0 },\n  \"budget\": null,\n  \"must_have\": [\"sen-health\"]\n}",
+  "tier": "quick",
+  "ms": 3639
+}

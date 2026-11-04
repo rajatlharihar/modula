@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t9",
+  "reply": "{\"reasoning\":\"Shoots long-zoom wildlife photos over multi-week stints in forests with no network coverage, so needs strong camera reach, lots of storage, and long battery life away from charging.\",\"needs\":{\"camera\":1.0,\"performance\":0.1,\"battery\":0.7,\"audio\":0.1,\"storage\":0.7,\"connectivity\":0.7,\"durability\":0.4,\"sensing\":0.1,\"portability\":0.4},\"budget\":null,\"must_have\":[\"aux-tele\",\"net-sat\"]}",
+  "tier": "quick",
+  "ms": 2568
+}

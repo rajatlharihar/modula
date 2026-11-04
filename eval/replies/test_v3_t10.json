@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t10",
+  "reply": "{\"reasoning\":\"Light phone use limited to maps and calls while travelling, with a strong preference for a cheap, small device under 22k.\",\"needs\":{\"camera\":0.1,\"performance\":0.1,\"battery\":0.4,\"audio\":0.1,\"storage\":0.1,\"connectivity\":0.4,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.7},\"budget\":22000,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 2463
+}

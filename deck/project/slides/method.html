@@ -1,0 +1,35 @@
+<section id="method" data-transition="fade" style="background:#E8EBE6;color:#2F4A47;font-family:'Barlow', Arial, sans-serif;padding:120px">
+<h2 style="font-size:84px;font-weight:700;line-height:1.08;color:#2F4A47">Methodology</h2>
+<svg aria-label="Arrows showing the order of the five steps, from Claude to Python and back to Claude" style="position:absolute;left:120px;top:240px;width:1680px;height:470px" width="1680" height="470" viewBox="0 0 1680 470"><path d="M295 224 V356 H459" fill="none" stroke="#2F4A47" stroke-width="3"/><polygon points="467,356 457,350 457,362" fill="#2F4A47"/><path d="M746 356 H770" fill="none" stroke="#2F4A47" stroke-width="3"/><polygon points="778,356 768,350 768,362" fill="#2F4A47"/><path d="M1057 356 H1081" fill="none" stroke="#2F4A47" stroke-width="3"/><polygon points="1089,356 1079,350 1079,362" fill="#2F4A47"/><path d="M1368 356 H1540 V234" fill="none" stroke="#2F4A47" stroke-width="3"/><polygon points="1540,224 1534,234 1546,234" fill="#2F4A47"/></svg>
+<p style="position:absolute;left:120px;top:330px;width:140px;font-size:32px;font-weight:600;color:#2F4A47">Claude</p>
+<p style="position:absolute;left:120px;top:576px;width:140px;font-size:32px;font-weight:600;color:#2F4A47">Python</p>
+<div style="position:absolute;left:276px;top:240px;width:279px;height:224px;background:#FFB400;border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.1;color:#2F4A47">1. Parse</h3>
+<p style="font-size:24px;line-height:1.3;color:#2F4A47">Text to JSON: priorities, budget and required modules</p>
+</div>
+<div style="position:absolute;left:587px;top:484px;width:279px;height:224px;background:#2F4A47;border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.1;color:#E8EBE6">2. Vector</h3>
+<p style="font-size:24px;line-height:1.3;color:#E8EBE6">Need and phones on the same nine axes</p>
+</div>
+<div style="position:absolute;left:898px;top:484px;width:279px;height:224px;background:#2F4A47;border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.1;color:#E8EBE6">3. Search</h3>
+<p style="font-size:24px;line-height:1.3;color:#E8EBE6">Filter by space, budget and dependencies, then rank</p>
+</div>
+<div style="position:absolute;left:1209px;top:484px;width:279px;height:224px;background:#2F4A47;border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.1;color:#E8EBE6">4. Place</h3>
+<p style="font-size:24px;line-height:1.3;color:#E8EBE6">Fit modules on the frame by heat, antenna and grip</p>
+</div>
+<div style="position:absolute;left:1520px;top:240px;width:279px;height:224px;background:#FFB400;border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.1;color:#2F4A47">5. Explain</h3>
+<p style="font-size:24px;line-height:1.3;color:#2F4A47">Two sentences written only from computed facts</p>
+</div>
+<div style="position:absolute;left:120px;top:738px;width:800px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:32px;font-weight:600;line-height:1.2;color:#2F4A47">Prompts compared</h3>
+<p style="font-size:28px;line-height:1.35;color:#2F4A47"><b>v1</b> a minimal request<br><b>v2</b> role, axis definitions, anchored scale, strict schema<br><b>v3</b> v2 plus inference rules, reasoning step, few-shot examples</p>
+</div>
+<div style="position:absolute;left:1000px;top:738px;width:800px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:32px;font-weight:600;line-height:1.2;color:#2F4A47">Build score</h3>
+<p style="font-size:28px;line-height:1.35;color:#2F4A47">0.5 × cosine + 0.5 × attainment − 0.2 × price ÷ ₹90,000<br>Cosine checks the phone’s shape, attainment its strength on what matters, and price limits overkill.</p>
+</div>
+<aside>[1:10 to 2:00] The system is written in Python: NumPy for the vector search, matplotlib for the phone drawing and Streamlit for the interface. The language replies behind our results were recorded earlier, from a first version of the page, and the app plays them back. We split the work in two. Claude handles language: it reads the person and explains the result, though in the offline demo that explanation comes from a template. Python handles everything that has to be correct. The need and every candidate phone sit in the same nine-axis vector space. We filter by space, budget and dependencies, rank what’s left, then place the modules using heat, antenna and grip rules. Cosine alone would reward a weak phone with the right shape, so we add attainment, with needs squared so top priorities dominate. We compared three prompts, v1 to v3, each adding more structure, as listed on the slide.</aside>
+</section>

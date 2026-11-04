@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v1",
+  "id": "d3",
+  "reply": "```json\n{\n  \"needs\": {\n    \"camera\": 0.1,\n    \"performance\": 0.2,\n    \"battery\": 0.3,\n    \"audio\": 0.1,\n    \"storage\": 0.1,\n    \"connectivity\": 0.9,\n    \"durability\": 0.1,\n    \"sensing\": 0.0,\n    \"portability\": 0.2\n  },\n  \"budget\": {\n    \"max\": 25000,\n    \"currency\": null\n  },\n  \"must_have\": []\n}\n```",
+  "tier": "quick",
+  "ms": 2480
+}

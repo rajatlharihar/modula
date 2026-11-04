@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t6",
+  "reply": "{\n  \"reasoning\": \"This person is an audiophile who keeps a 1TB lossless FLAC music library and wants the best possible playback quality.\",\n  \"needs\": { \"camera\": 0.0, \"performance\": 0.0, \"battery\": 0.0, \"audio\": 1.0, \"storage\": 0.7, \"connectivity\": 0.0, \"durability\": 0.0, \"sensing\": 0.0, \"portability\": 0.0 },\n  \"budget\": null,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 2932
+}

@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t1",
+  "reply": "{\"reasoning\":\"Street photography mostly at night, so low-light image quality and storage for many photos matter most, with no gaming use.\",\"needs\":{\"camera\":1.0,\"performance\":0.1,\"battery\":0.4,\"audio\":0.1,\"storage\":0.7,\"connectivity\":0.1,\"durability\":0.4,\"sensing\":0.1,\"portability\":0.4},\"budget\":null,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 2937
+}

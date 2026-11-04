@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v1",
+  "id": "t4",
+  "reply": "```json\n{\n  \"needs\": {\n    \"camera\": 0,\n    \"performance\": 0.9,\n    \"battery\": 0,\n    \"audio\": 0,\n    \"storage\": 0,\n    \"connectivity\": 1,\n    \"durability\": 0,\n    \"sensing\": 0,\n    \"portability\": 0\n  },\n  \"budget\": \"80k (currency not specified)\",\n  \"must_have\": [\"c-pro\", \"net-mm\"]\n}\n```",
+  "tier": "quick",
+  "ms": 3460
+}

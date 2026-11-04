@@ -1,0 +1,2209 @@
+{
+  "summary": {
+    "fixed": {
+      "n": 16,
+      "strict_json": 1,
+      "schema_valid": 1,
+      "need_cosine": 0.0,
+      "top2_recall": 0.0,
+      "budget_accuracy": 0.0,
+      "must_precision": 1.0,
+      "must_recall": 1.0,
+      "fit": 0.5062668343349345,
+      "regret": 0.2730080519003194,
+      "over_budget": 3,
+      "missed_must": 5,
+      "failed_builds": 7
+    },
+    "keyword": {
+      "n": 16,
+      "strict_json": 1,
+      "schema_valid": 1,
+      "need_cosine": 0.8986176914843881,
+      "top2_recall": 0.75,
+      "budget_accuracy": 1,
+      "must_precision": 1.0,
+      "must_recall": 1.0,
+      "fit": 0.7425886536315673,
+      "regret": 0.03668623260368648,
+      "over_budget": 0,
+      "missed_must": 0,
+      "failed_builds": 0
+    },
+    "v1": {
+      "n": 16,
+      "strict_json": 0.1875,
+      "schema_valid": 0.9375,
+      "need_cosine": 0.9373569652183007,
+      "top2_recall": 0.84375,
+      "budget_accuracy": 0.75,
+      "must_precision": 0.20512820512820512,
+      "must_recall": 1.0,
+      "fit": 0.6377370374091186,
+      "regret": 0.1415378488261353,
+      "over_budget": 1,
+      "missed_must": 1,
+      "failed_builds": 3
+    },
+    "v2": {
+      "n": 16,
+      "strict_json": 1,
+      "schema_valid": 1,
+      "need_cosine": 0.970968091249489,
+      "top2_recall": 0.9375,
+      "budget_accuracy": 1,
+      "must_precision": 1.0,
+      "must_recall": 0.125,
+      "fit": 0.7682747777547394,
+      "regret": 0.011000108480514414,
+      "over_budget": 0,
+      "missed_must": 2,
+      "failed_builds": 2
+    },
+    "v3": {
+      "n": 16,
+      "strict_json": 1,
+      "schema_valid": 1,
+      "need_cosine": 0.9669583550962495,
+      "top2_recall": 0.875,
+      "budget_accuracy": 1,
+      "must_precision": 0.8888888888888888,
+      "must_recall": 1.0,
+      "fit": 0.7602015478692618,
+      "regret": 0.01907333836599208,
+      "over_budget": 0,
+      "missed_must": 0,
+      "failed_builds": 0
+    }
+  },
+  "methods": {
+    "fixed": [
+      {
+        "id": "t1",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.561853828514184,
+          "regret": 0.19575630598279858,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t2",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.321725982101313,
+          "regret": 0.44558409959474243,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": true
+        }
+      },
+      {
+        "id": "t3",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.5798709852762598,
+          "regret": 0.19371761713766722,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": true,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t4",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.6716442465898975,
+          "regret": 0.11336922196431098,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t5",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.25785658778482934,
+          "regret": 0.5062666964823888,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": true
+        }
+      },
+      {
+        "id": "t6",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.4437826694246122,
+          "regret": 0.2938799848428759,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t7",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.2997446640424398,
+          "regret": 0.5333173523114383,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t8",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.6899908992814663,
+          "regret": 0.10229727257982557,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t9",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.6019396842868494,
+          "regret": 0.13628908852789168,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": true
+        }
+      },
+      {
+        "id": "t10",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.4706853755114788,
+          "regret": 0.30452395617167427,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": true,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t11",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.30551597597425273,
+          "regret": 0.517866645499612,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": true
+        }
+      },
+      {
+        "id": "t12",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.6406802480379993,
+          "regret": 0.15504134144858883,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t13",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.3844554728375402,
+          "regret": 0.43566977043870136,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t14",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.5667090816695193,
+          "regret": 0.18803460819748996,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t15",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.6422087554272236,
+          "regret": 0.16834193730504166,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": true,
+          "missed_must": true
+        }
+      },
+      {
+        "id": "t16",
+        "strict": true,
+        "schema_ok": true,
+        "grade": {
+          "fit": 0.6616048925990856,
+          "regret": 0.0781729319200628,
+          "none": false,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-108",
+            "aux-uw",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 53000,
+          "over_budget": false,
+          "missed_must": false
+        }
+      }
+    ],
+    "keyword": [
+      {
+        "id": "t1",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.7864734159048539,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7024876886716946,
+          "regret": 0.055122445825287913,
+          "modules": [
+            "c-pro",
+            "b-3000",
+            "cam-1in",
+            "aux-uw",
+            "cool-vc"
+          ],
+          "price": 52300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t2",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9248196237065436,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7374574269723244,
+          "regret": 0.029852654723730998,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50",
+            "net-sat",
+            "sen-env",
+            "arm-rug"
+          ],
+          "price": 34300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t3",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.8033921199831043,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.6828221328993297,
+          "regret": 0.09076646951459733,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50",
+            "aud-hifi"
+          ],
+          "price": 25800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t4",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9297848078671117,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7472398992231218,
+          "regret": 0.037773569331086665,
+          "modules": [
+            "c-game",
+            "b-4500",
+            "cam-50",
+            "net-mm",
+            "cool-vc"
+          ],
+          "price": 48500,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t5",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9552974165004657,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7641232842672181,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50",
+            "sen-health"
+          ],
+          "price": 23800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t6",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.8856148855400954,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7376626542674881,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50",
+            "aud-hifi",
+            "st-2tb"
+          ],
+          "price": 35300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t7",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9986242978373109,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8330620163538781,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "arm-rug"
+          ],
+          "price": 26000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t8",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.8958864034136232,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7377654242655984,
+          "regret": 0.05452274759569342,
+          "modules": [
+            "c-game",
+            "b-4500",
+            "cam-50",
+            "net-mm",
+            "cool-vc"
+          ],
+          "price": 48500,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t9",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.7474506443853484,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.6431381111386065,
+          "regret": 0.09509066167613456,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-108",
+            "aux-tele",
+            "net-sat"
+          ],
+          "price": 35800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t10",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.949402192127843,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7752093316831531,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50"
+          ],
+          "price": 19300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t11",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9878087384787018,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8207874946534222,
+          "regret": 0.002595126820442606,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "sen-health"
+          ],
+          "price": 27000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t12",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9498649482376316,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7957215894865881,
+          "regret": 0.0,
+          "modules": [
+            "c-bal",
+            "b-3000",
+            "cam-1in",
+            "aud-hifi",
+            "st-2tb"
+          ],
+          "price": 51800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t13",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.970833977424958,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8063145917065153,
+          "regret": 0.013810651569726273,
+          "modules": [
+            "c-eff",
+            "b-6000",
+            "cam-50",
+            "aud-hifi",
+            "arm-rug"
+          ],
+          "price": 30900,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t14",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.7661738953012663,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.6111239744278506,
+          "regret": 0.14361971543915864,
+          "modules": [
+            "c-pro",
+            "b-3000",
+            "cam-1in"
+          ],
+          "price": 46800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t15",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9380352942419312,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7782810844319961,
+          "regret": 0.03226960830026915,
+          "modules": [
+            "c-game",
+            "b-4500",
+            "cam-50",
+            "cool-vc"
+          ],
+          "price": 43500,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t16",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.8884204027994206,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7082217536562923,
+          "regret": 0.03155607086285617,
+          "modules": [
+            "c-eff",
+            "b-4500",
+            "cam-108",
+            "aux-uw"
+          ],
+          "price": 27000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      }
+    ],
+    "v1": [
+      {
+        "id": "t1",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.8594067032882654,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.6840715561870127,
+          "regret": 0.0735385783099699,
+          "modules": [
+            "c-bal",
+            "b-3000",
+            "cam-1in",
+            "st-512",
+            "arm-rug"
+          ],
+          "price": 42300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t2",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9598045402126949,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7560380217295843,
+          "regret": 0.01127205996647107,
+          "modules": [
+            "c-eff",
+            "b-4500",
+            "cam-50",
+            "net-sat",
+            "sen-env",
+            "arm-rug"
+          ],
+          "price": 35000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t3",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.968692782944559,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.6927374577215362,
+          "regret": 0.08085114469239085,
+          "modules": [
+            "c-bal",
+            "b-4500",
+            "cam-50",
+            "aud-st"
+          ],
+          "price": 27000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t4",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.8907494221545768,
+          "top2": 1.0,
+          "budget_right": false,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7558074583607597,
+          "regret": 0.029206010193448817,
+          "modules": [
+            "c-pro",
+            "b-4500",
+            "cam-50",
+            "net-mm",
+            "cool-vc"
+          ],
+          "price": 43500,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t5",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9429541672723837,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7641232842672181,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50",
+            "sen-health"
+          ],
+          "price": 23800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t6",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 1.0,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7376626542674881,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50",
+            "aud-hifi",
+            "st-2tb"
+          ],
+          "price": 35300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t7",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9652991806882142,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8330620163538781,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "arm-rug"
+          ],
+          "price": 26000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t8",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9587193020526023,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 5,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7214565038454112,
+          "regret": 0.0708316680158807,
+          "modules": [
+            "c-game",
+            "b-6000",
+            "cam-50",
+            "st-512",
+            "net-mm",
+            "cool-vc"
+          ],
+          "price": 52400,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t9",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9786987886703673,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 2,
+          "fp": 2,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.0,
+          "regret": 0.7382287728147411,
+          "over_budget": false,
+          "missed_must": true,
+          "none": true,
+          "modules": []
+        }
+      },
+      {
+        "id": "t10",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9319303364773481,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7752093316831531,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50"
+          ],
+          "price": 19300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t11",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9795522313532564,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7706451914961457,
+          "regret": 0.05273742997771902,
+          "modules": [
+            "c-eff",
+            "b-6000",
+            "cam-50",
+            "sen-health"
+          ],
+          "price": 25400,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t12",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9734584331272806,
+          "top2": 1.0,
+          "budget_right": false,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7272692298542779,
+          "regret": 0.06845235963231022,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-108",
+            "aux-tele",
+            "aud-hifi",
+            "st-512"
+          ],
+          "price": 39800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t13",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9710607611177227,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8201252432762416,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "aud-st",
+            "arm-rug"
+          ],
+          "price": 28000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t14",
+        "strict": false,
+        "schema_ok": false,
+        "parse": {
+          "cosine": 0.7179581586177382,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.4742671200814419,
+          "regret": 0.28047656978556734,
+          "modules": [
+            "c-bal",
+            "b-3000",
+            "cam-108",
+            "aud-st",
+            "st-512",
+            "net-mm",
+            "sen-health",
+            "arm-rug"
+          ],
+          "price": 46300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t15",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9239886042108217,
+          "top2": 1.0,
+          "budget_right": false,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.6913175294217482,
+          "regret": 0.11923316331051703,
+          "modules": [
+            "c-pro",
+            "b-6000",
+            "cam-50",
+            "aud-st",
+            "st-512",
+            "net-mm",
+            "sen-health",
+            "cool-vc"
+          ],
+          "price": 53900,
+          "none": false,
+          "over_budget": true,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t16",
+        "strict": false,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9754380313049796,
+          "top2": 1.0,
+          "budget_right": false,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.0,
+          "regret": 0.7397778245191484,
+          "over_budget": false,
+          "missed_must": false,
+          "none": true,
+          "modules": []
+        }
+      }
+    ],
+    "v2": [
+      {
+        "id": "t1",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9643207609061055,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7237039600293149,
+          "regret": 0.03390617446766764,
+          "modules": [
+            "c-bal",
+            "b-3000",
+            "cam-1in",
+            "st-512"
+          ],
+          "price": 38800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t2",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9245743836381318,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        "grade": {
+          "fit": 0.7563822703253558,
+          "regret": 0.010927811370699647,
+          "modules": [
+            "c-eff",
+            "b-6000",
+            "cam-50",
+            "st-512",
+            "net-mm",
+            "sen-health",
+            "arm-rug"
+          ],
+          "price": 36900,
+          "none": false,
+          "over_budget": false,
+          "missed_must": true
+        }
+      },
+      {
+        "id": "t3",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9858435728860859,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.773588602413927,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-6000",
+            "cam-50",
+            "aud-hifi"
+          ],
+          "price": 27400,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t4",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9371591986979891,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "grade": {
+          "fit": 0.7472398992231218,
+          "regret": 0.037773569331086665,
+          "modules": [
+            "c-game",
+            "b-4500",
+            "cam-50",
+            "net-mm",
+            "cool-vc"
+          ],
+          "price": 48500,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t5",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9696074777085394,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7641232842672181,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50",
+            "sen-health"
+          ],
+          "price": 23800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t6",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9847835588179368,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7336100719424268,
+          "regret": 0.004052582325061338,
+          "modules": [
+            "c-bal",
+            "b-3000",
+            "cam-50",
+            "aud-hifi",
+            "st-2tb"
+          ],
+          "price": 40300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t7",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9986242978373109,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8330620163538781,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "arm-rug"
+          ],
+          "price": 26000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t8",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9451084499954728,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7390859017945978,
+          "regret": 0.05320227006669409,
+          "modules": [
+            "c-pro",
+            "b-8000",
+            "cam-50",
+            "st-512",
+            "net-mm",
+            "cool-vc"
+          ],
+          "price": 49000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t9",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9919509427464615,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        "grade": {
+          "fit": 0.7706719015106364,
+          "regret": -0.032443128695895274,
+          "modules": [
+            "c-eff",
+            "b-6000",
+            "cam-108",
+            "st-512",
+            "net-mm",
+            "arm-rug"
+          ],
+          "price": 36400,
+          "none": false,
+          "over_budget": false,
+          "missed_must": true
+        }
+      },
+      {
+        "id": "t10",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9718910218564949,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7752093316831531,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50"
+          ],
+          "price": 19300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t11",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9878087384787018,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "grade": {
+          "fit": 0.8207874946534222,
+          "regret": 0.002595126820442606,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "sen-health"
+          ],
+          "price": 27000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t12",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9841497561465659,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7957215894865881,
+          "regret": 0.0,
+          "modules": [
+            "c-bal",
+            "b-3000",
+            "cam-1in",
+            "aud-hifi",
+            "st-2tb"
+          ],
+          "price": 51800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t13",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9779068319864205,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8063145917065153,
+          "regret": 0.013810651569726273,
+          "modules": [
+            "c-eff",
+            "b-6000",
+            "cam-50",
+            "aud-hifi",
+            "arm-rug"
+          ],
+          "price": 30900,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t14",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9342181499589218,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7473576291603327,
+          "regret": 0.007386060706676578,
+          "modules": [
+            "c-pro",
+            "b-3000",
+            "cam-50"
+          ],
+          "price": 35300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t15",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9966994064532902,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "grade": {
+          "fit": 0.8105506927322652,
+          "regret": 0.0,
+          "modules": [
+            "c-game",
+            "b-8000",
+            "cam-50",
+            "cool-vc"
+          ],
+          "price": 46000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t16",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9808429118773947,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.6949872067930774,
+          "regret": 0.04479061772607107,
+          "modules": [
+            "c-bal",
+            "b-4500",
+            "cam-1in",
+            "aud-st",
+            "st-512",
+            "sen-health"
+          ],
+          "price": 46000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      }
+    ],
+    "v3": [
+      {
+        "id": "t1",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.8784532208560114,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.6523367048520344,
+          "regret": 0.10527342964494812,
+          "modules": [
+            "c-bal",
+            "b-3000",
+            "cam-1in",
+            "st-2tb",
+            "arm-rug"
+          ],
+          "price": 48800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t2",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9583933300589461,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7363431193584832,
+          "regret": 0.030966962337572235,
+          "modules": [
+            "c-eff",
+            "b-6000",
+            "cam-50",
+            "st-512",
+            "net-sat",
+            "sen-env",
+            "arm-rug"
+          ],
+          "price": 38900,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t3",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9455404673183696,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7726232799212469,
+          "regret": 0.0009653224926801096,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "aud-st",
+            "cool-vc"
+          ],
+          "price": 27000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t4",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9371591986979891,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7472398992231218,
+          "regret": 0.037773569331086665,
+          "modules": [
+            "c-game",
+            "b-4500",
+            "cam-50",
+            "net-mm",
+            "cool-vc"
+          ],
+          "price": 48500,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t5",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.980203542984288,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7641232842672181,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50",
+            "sen-health"
+          ],
+          "price": 23800,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t6",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9847835588179368,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7336100719424268,
+          "regret": 0.004052582325061338,
+          "modules": [
+            "c-bal",
+            "b-3000",
+            "cam-50",
+            "aud-hifi",
+            "st-2tb"
+          ],
+          "price": 40300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t7",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9789817228755412,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8330620163538781,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "arm-rug"
+          ],
+          "price": 26000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t8",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.979257532900019,
+          "top2": 0.5,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7482838579538718,
+          "regret": 0.0440043139074201,
+          "modules": [
+            "c-pro",
+            "b-8000",
+            "cam-50",
+            "aud-st",
+            "st-512",
+            "net-mm"
+          ],
+          "price": 48500,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t9",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9678818340351982,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7100880704264986,
+          "regret": 0.02814070238824251,
+          "modules": [
+            "c-eff",
+            "b-6000",
+            "cam-108",
+            "aux-tele",
+            "st-2tb",
+            "net-sat"
+          ],
+          "price": 46900,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t10",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9718910218564949,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7752093316831531,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-3000",
+            "cam-50"
+          ],
+          "price": 19300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t11",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9972326564275259,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8233826214738648,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "sen-health",
+            "arm-rug"
+          ],
+          "price": 30500,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t12",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9652465652365365,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7933942277220578,
+          "regret": 0.0023273617645303,
+          "modules": [
+            "c-bal",
+            "b-4500",
+            "cam-1in",
+            "aud-hifi",
+            "st-2tb"
+          ],
+          "price": 52500,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t13",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.998310410748306,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.8201252432762416,
+          "regret": 0.0,
+          "modules": [
+            "c-eff",
+            "b-8000",
+            "cam-50",
+            "aud-st",
+            "arm-rug"
+          ],
+          "price": 28000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t14",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9976428055452092,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7547436898670092,
+          "regret": 0.0,
+          "modules": [
+            "c-bal",
+            "b-3000",
+            "cam-50"
+          ],
+          "price": 24300,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t15",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9318911162960933,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7588815230679333,
+          "regret": 0.05166916966433188,
+          "modules": [
+            "c-pro",
+            "b-8000",
+            "cam-50",
+            "aud-st",
+            "st-512",
+            "cool-vc"
+          ],
+          "price": 46000,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      },
+      {
+        "id": "t16",
+        "strict": true,
+        "schema_ok": true,
+        "parse": {
+          "cosine": 0.9984646968855257,
+          "top2": 1.0,
+          "budget_right": true,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grade": {
+          "fit": 0.7397778245191484,
+          "regret": 0.0,
+          "modules": [
+            "c-bal",
+            "b-6000",
+            "cam-1in",
+            "aud-st",
+            "st-512"
+          ],
+          "price": 42400,
+          "none": false,
+          "over_budget": false,
+          "missed_must": false
+        }
+      }
+    ]
+  }
+}

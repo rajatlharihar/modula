@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v3",
+  "id": "d7",
+  "reply": "{\"reasoning\":\"Shoots 4K video daily, edits on the phone while travelling, flies often and wants a light device, and relies on a power bank rather than long battery life.\",\"needs\":{\"camera\":1.0,\"performance\":0.7,\"battery\":0.4,\"audio\":0.4,\"storage\":0.7,\"connectivity\":0.4,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.7},\"budget\":null,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 3146
+}

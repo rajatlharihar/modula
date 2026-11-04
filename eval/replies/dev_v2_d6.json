@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v2",
+  "id": "d6",
+  "reply": "{\n  \"reasoning\": \"A music producer who uses the phone to check reference mixes on the go and to store large sample libraries.\",\n  \"needs\": { \"camera\": 0.1, \"performance\": 0.4, \"battery\": 0.4, \"audio\": 1.0, \"storage\": 0.7, \"connectivity\": 0.1, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.1 },\n  \"budget\": null,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 2461
+}

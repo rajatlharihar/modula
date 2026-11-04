@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v3",
+  "id": "d1",
+  "reply": "{\"reasoning\":\"Shoots weddings all day and stores raw photo files on the phone, so image quality, storage and all-day battery matter most.\",\"needs\":{\"camera\":1.0,\"performance\":0.4,\"battery\":0.7,\"audio\":0.1,\"storage\":0.7,\"connectivity\":0.1,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.1},\"budget\":60000,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 1933
+}

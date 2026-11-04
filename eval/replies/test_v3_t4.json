@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t4",
+  "reply": "{\"reasoning\":\"Day trader who relies on the fastest possible 5G data and needs a phone that never lags during live trading.\",\"needs\":{\"camera\":0.1,\"performance\":0.7,\"battery\":0.1,\"audio\":0.1,\"storage\":0.1,\"connectivity\":1.0,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.1},\"budget\":80000,\"must_have\":[\"net-mm\"]}",
+  "tier": "quick",
+  "ms": 1727
+}

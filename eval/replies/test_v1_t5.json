@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v1",
+  "id": "t5",
+  "reply": "```json\n{\n  \"needs\": {\n    \"camera\": 0,\n    \"performance\": 0,\n    \"battery\": 0,\n    \"audio\": 0,\n    \"storage\": 0,\n    \"connectivity\": 0,\n    \"durability\": 0,\n    \"sensing\": 1,\n    \"portability\": 1\n  },\n  \"budget\": null,\n  \"must_have\": [\"sen-health\"]\n}\n```",
+  "tier": "quick",
+  "ms": 2722
+}

@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v3",
+  "id": "d2",
+  "reply": "{\"reasoning\":\"Plays competitive BGMI for long sessions and needs sustained, stable frame rates without drops.\",\"needs\":{\"camera\":0.1,\"performance\":1.0,\"battery\":0.7,\"audio\":0.4,\"storage\":0.4,\"connectivity\":0.4,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.1},\"budget\":null,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 3128
+}

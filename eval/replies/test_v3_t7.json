@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t7",
+  "reply": "{\"reasoning\":\"Supervises construction sites where the phone is dropped weekly, exposed to dust, and must last a 12-hour shift on one charge.\",\"needs\":{\"camera\":0.4,\"performance\":0.1,\"battery\":1.0,\"audio\":0.1,\"storage\":0.1,\"connectivity\":0.1,\"durability\":1.0,\"sensing\":0.1,\"portability\":0.1},\"budget\":null,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 3148
+}

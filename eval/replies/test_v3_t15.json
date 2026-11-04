@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t15",
+  "reply": "{\"reasoning\":\"Plays demanding mobile games (BGMI and COD) for long sessions and needs the phone to stay cool under load.\",\"needs\":{\"camera\":0.0,\"performance\":1.0,\"battery\":0.4,\"audio\":0.4,\"storage\":0.4,\"connectivity\":0.1,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.1},\"budget\":50000,\"must_have\":[\"cool-vc\"]}",
+  "tier": "quick",
+  "ms": 3704
+}

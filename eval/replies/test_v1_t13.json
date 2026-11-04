@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v1",
+  "id": "t13",
+  "reply": "```json\n{\n  \"needs\": {\n    \"camera\": 0,\n    \"performance\": 0,\n    \"battery\": 1,\n    \"audio\": 1,\n    \"storage\": 0,\n    \"connectivity\": 0,\n    \"durability\": 1,\n    \"sensing\": 0,\n    \"portability\": 0\n  },\n  \"budget\": null,\n  \"must_have\": [\"arm-rug\", \"aud-st\", \"b-8000\"]\n}\n```",
+  "tier": "quick",
+  "ms": 2661
+}

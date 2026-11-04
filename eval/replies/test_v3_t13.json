@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t13",
+  "reply": "{\"reasoning\":\"An older user who wants a phone that survives everyday knocks, is loud enough to hear easily, and keeps working for days between charges, with no interest in photos or heavy apps.\",\"needs\":{\"camera\":0.1,\"performance\":0.1,\"battery\":1.0,\"audio\":0.7,\"storage\":0.1,\"connectivity\":0.1,\"durability\":1.0,\"sensing\":0.1,\"portability\":0.1},\"budget\":null,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 2119
+}

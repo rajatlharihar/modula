@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v2",
+  "id": "d4",
+  "reply": "{\"reasoning\": \"Works as a trek guide in remote Ladakh, where the phone must survive frequent drops on rocks and keep working through multi-day stretches with no signal and limited charging.\", \"needs\": { \"camera\": 0.1, \"performance\": 0.1, \"battery\": 0.7, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 1.0, \"durability\": 1.0, \"sensing\": 0.1, \"portability\": 0.1 }, \"budget\": null, \"must_have\": []}",
+  "tier": "quick",
+  "ms": 3433
+}

@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v1",
+  "id": "d8",
+  "reply": "```json\n{\n  \"needs\": {\n    \"camera\": 0.05,\n    \"performance\": 0.6,\n    \"battery\": 0.9,\n    \"audio\": 0.4,\n    \"storage\": 0.4,\n    \"connectivity\": 0.3,\n    \"durability\": 0.3,\n    \"sensing\": 0.1,\n    \"portability\": 0.3\n  },\n  \"budget\": {\n    \"amount\": 30000,\n    \"currency\": \"INR\"\n  },\n  \"must_have\": [\"b-6000\", \"c-bal\"]\n}\n```",
+  "tier": "quick",
+  "ms": 4071
+}

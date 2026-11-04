@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v3",
+  "id": "t14",
+  "reply": "{\"reasoning\":\"Travels constantly for consulting work and wants the lightest phone that still performs well, with no interest in photography.\",\"needs\":{\"camera\":0.0,\"performance\":0.7,\"battery\":0.4,\"audio\":0.1,\"storage\":0.1,\"connectivity\":0.4,\"durability\":0.1,\"sensing\":0.1,\"portability\":1.0},\"budget\":null,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 2173
+}

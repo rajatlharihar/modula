@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t7",
+  "reply": "{\"reasoning\": \"They use the phone as a rugged field tool on a construction site, where it gets dropped weekly and exposed to dust and must last a full 12-hour shift.\", \"needs\": { \"camera\": 0.1, \"performance\": 0.1, \"battery\": 1.0, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 0.1, \"durability\": 1.0, \"sensing\": 0.1, \"portability\": 0.1 }, \"budget\": null, \"must_have\": []}",
+  "tier": "quick",
+  "ms": 2953
+}

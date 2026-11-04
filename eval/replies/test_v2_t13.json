@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t13",
+  "reply": "{\n  \"reasoning\": \"An older relative who needs a phone that survives drops, is loud enough to hear calls and media, and goes days between charges.\",\n  \"needs\": { \"camera\": 0.1, \"performance\": 0.1, \"battery\": 0.7, \"audio\": 0.7, \"storage\": 0.1, \"connectivity\": 0.1, \"durability\": 1.0, \"sensing\": 0.1, \"portability\": 0.1 },\n  \"budget\": null,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 2728
+}

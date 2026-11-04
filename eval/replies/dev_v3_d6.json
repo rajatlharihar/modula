@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v3",
+  "id": "d6",
+  "reply": "{\"reasoning\":\"Listens to reference mixes away from the studio, so audio playback quality matters, and keeps very large sample libraries on the device.\",\"needs\":{\"camera\":0.1,\"performance\":0.4,\"battery\":0.7,\"audio\":0.7,\"storage\":1.0,\"connectivity\":0.1,\"durability\":0.1,\"sensing\":0.1,\"portability\":0.1},\"budget\":null,\"must_have\":[]}",
+  "tier": "quick",
+  "ms": 2999
+}

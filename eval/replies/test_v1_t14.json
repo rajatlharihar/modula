@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v1",
+  "id": "t14",
+  "reply": "```json\n{\n  \"ratings\": {\n    \"camera\": 0.05,\n    \"performance\": 0.85,\n    \"battery\": 0.3,\n    \"audio\": 0.1,\n    \"storage\": 0.2,\n    \"connectivity\": 0.3,\n    \"durability\": 0.2,\n    \"sensing\": 0.1,\n    \"portability\": 1.0\n  },\n  \"needs\": [\"c-bal\", \"b-3000\"],\n  \"budget\": null,\n  \"must_have\": [\"c-bal\"]\n}\n```",
+  "tier": "quick",
+  "ms": 3836
+}

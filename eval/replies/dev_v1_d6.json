@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "version": "v1",
+  "id": "d6",
+  "reply": "```json\n{\n  \"needs\": {\n    \"camera\": 0.1,\n    \"performance\": 0.6,\n    \"battery\": 0.5,\n    \"audio\": 0.9,\n    \"storage\": 0.9,\n    \"connectivity\": 0.3,\n    \"durability\": 0.2,\n    \"sensing\": 0.1,\n    \"portability\": 0.6\n  },\n  \"budget\": null,\n  \"must_have\": [\"aud-hifi\", \"st-2tb\"]\n}\n```",
+  "tier": "quick",
+  "ms": 2205
+}

@@ -1,0 +1,8 @@
+{
+  "split": "test",
+  "version": "v2",
+  "id": "t15",
+  "reply": "{\n  \"reasoning\": \"This person uses the phone mainly for competitive mobile gaming (BGMI and COD) and wants it to stay cool during long sessions.\",\n  \"needs\": { \"camera\": 0.1, \"performance\": 1.0, \"battery\": 0.4, \"audio\": 0.1, \"storage\": 0.1, \"connectivity\": 0.1, \"durability\": 0.1, \"sensing\": 0.1, \"portability\": 0.1 },\n  \"budget\": 50000,\n  \"must_have\": []\n}",
+  "tier": "quick",
+  "ms": 4021
+}
