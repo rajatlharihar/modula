@@ -13,6 +13,38 @@ PRESET_IDS = ("d1", "d4", "t15", "d5", "d7", "d2")
 
 st.set_page_config(page_title="Modula", layout="wide")
 
+STYLE = """
+<style>
+@font-face{font-family:"Restora";src:url(/app/static/RestoraItalic.ttf);font-style:italic}
+@font-face{font-family:"Typewriter";src:url(/app/static/typewriter.ttf)}
+:root{--cobalt:#0047AB;--ink:#10131C;--grey:#8C919E;--line:#D5D8DF;--card:#F8F9FA}
+html,body,.stApp,[data-testid="stMarkdownContainer"],textarea,input,button,summary{font-family:"Outfit",sans-serif}
+[data-testid="stIconMaterial"],span[class*="material"]{font-family:"Material Symbols Rounded"!important;font-size:24px!important;letter-spacing:0!important;text-transform:none!important}
+.block-container{padding-top:2.2rem;max-width:1500px}
+header[data-testid="stHeader"]{background:transparent}
+h1{font-family:"Restora",serif!important;font-style:italic;font-weight:400!important;font-size:96px!important;line-height:1!important;letter-spacing:-1.5px;color:var(--ink);padding:0!important}
+h1:before{content:"Prompt Engineering and Generative AI";display:block;font-family:"Typewriter",monospace;font-style:normal;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin-bottom:14px}
+[data-testid="stMarkdownContainer"] p{font-size:20px;line-height:1.4}
+[data-testid="stCaptionContainer"],[data-testid="stCaptionContainer"] p{font-family:"Typewriter",monospace!important;font-size:14px!important;letter-spacing:.06em;color:var(--grey)!important;line-height:1.5}
+label p,[data-testid="stWidgetLabel"] p{font-family:"Typewriter",monospace!important;font-size:15px!important;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)}
+textarea,input{border-radius:20px!important;background:var(--card)!important;border:1.5px solid var(--line)!important;font-size:20px!important}
+.stButton>button,.stDownloadButton>button{border-radius:999px;font-size:18px;font-weight:500;padding:.55rem 1.4rem;border:1.5px solid var(--ink);background:transparent;color:var(--ink)}
+.stButton>button[kind="primary"]{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+.stButton>button:hover,.stDownloadButton>button:hover{border-color:var(--cobalt);color:var(--cobalt)}
+.stButton>button[kind="primary"]:hover{background:#00306F;color:#fff}
+[data-testid="stExpander"]{background:var(--card);border:1.5px solid var(--line);border-radius:24px}
+[data-testid="stExpander"] summary p{font-size:20px;font-weight:500}
+[data-testid="stPills"] button,[data-testid="stSegmentedControl"] button{border-radius:999px;font-size:17px}
+table{border-collapse:collapse;width:100%}
+th{font-family:"Typewriter",monospace!important;font-weight:400!important;font-size:14px!important;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)!important;border-bottom:1.5px solid var(--ink)!important}
+td{font-size:26px!important;color:var(--ink);border-bottom:1.5px solid var(--line)!important}
+td strong{font-weight:600}
+[data-testid="stImage"] img,[data-testid="stPyplot"] img{border-radius:28px}
+[data-testid="stAlert"]{border-radius:20px}
+</style>
+"""
+st.markdown(STYLE, unsafe_allow_html=True)
+
 
 @st.cache_data
 def presets():
@@ -173,7 +205,7 @@ with middle:
     build = builds[index] if builds else None
     st.pyplot(figures.phone_figure(build, need), clear_figure=True)
     if build and max(need.values()) > min(need.values()):
-        st.caption("Yellow modules serve your top priority.")
+        st.caption("Blue modules serve your top priority.")
 
 # ---- Right column contents ----
 
@@ -193,7 +225,7 @@ with metrics:
 
 with chart:
     st.pyplot(figures.vector_figure(need, build), clear_figure=True)
-    st.caption("Dark bar: what this build delivers. Yellow mark: what you need.")
+    st.caption("Blue bar: what this build delivers. Dark mark: what you need.")
 
 with message:
     if not build:
