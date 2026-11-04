@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modula, slides and references</title>
+<style>
+@font-face{font-family:"Restora";src:url(/fonts/RestoraItalic.ttf);font-style:italic;font-display:swap}
+@font-face{font-family:"Outfit";src:url(/fonts/Outfit-Regular.ttf);font-weight:400;font-display:swap}
+@font-face{font-family:"Outfit";src:url(/fonts/Outfit-Medium.ttf);font-weight:500;font-display:swap}
+@font-face{font-family:"Outfit";src:url(/fonts/Outfit-SemiBold.ttf);font-weight:600;font-display:swap}
+@font-face{font-family:"Typewriter";src:url(/fonts/typewriter.ttf);font-display:swap}
+:root{--paper:#F1F2F4;--ink:#10131C;--grey:#8C919E;--line:#D5D8DF;--cobalt:#0047AB;--gap:clamp(12px,1.7vw,24px)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:"Outfit",system-ui,sans-serif;font-size:clamp(17px,1.35vw,20px);line-height:1.45;-webkit-font-smoothing:antialiased}
+.page{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap)}
+.main{grid-column:2 / 12;padding:clamp(20px,3.5vw,48px) 0 clamp(40px,6vw,80px)}
+.eyebrow{font-family:"Typewriter",monospace;font-size:clamp(12px,.95vw,14px);letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+h1,h2{font-family:"Restora",serif;font-style:italic;font-weight:400;letter-spacing:-.015em;line-height:1}
+h1{font-size:clamp(48px,7vw,96px);margin:.2em 0 .3em}
+h2{font-size:clamp(36px,5vw,64px);margin:clamp(32px,5vw,64px) 0 .4em}
+h2 span{color:var(--grey)}
+.top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+a{color:var(--ink);text-decoration-color:var(--cobalt);text-underline-offset:4px}
+.btn{display:inline-block;border-radius:999px;background:var(--cobalt);color:#fff;text-decoration:none;padding:12px 22px;font-weight:500}
+.slides{display:grid;gap:var(--gap)}
+.slides img{width:100%;height:auto;display:block;border-radius:clamp(10px,1.4vw,20px);border:1.5px solid var(--line)}
+.refs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+@media (max-width:900px){.refs{grid-template-columns:1fr}}
+.refs h3{font-family:"Typewriter",monospace;font-weight:400;font-size:clamp(12px,.95vw,14px);letter-spacing:.14em;text-transform:uppercase;color:var(--cobalt);margin-bottom:12px}
+.refs li{list-style:none;margin-bottom:16px}
+.refs li b{font-weight:600}
+.refs li small{color:var(--grey);font-size:inherit}
+.more{margin-top:24px;color:var(--grey)}
+</style></head><body><div class="page"><main class="main">
+<div class="top"><span class="eyebrow">Prompt Engineering and Generative AI</span><a class="btn" href="Modula-Presentation.pdf">Download the PDF</a></div>
+<h1>Modula, the slides</h1>
+<div class="slides">
+<img src="slide1.png" alt="Slide 1: Modula, AI-assisted configuration of modular smartphones">
+<img src="slide2.png" alt="Slide 2: Problem statement">
+<img src="slide3.png" alt="Slide 3: Methodology">
+<img src="slide4.png" alt="Slide 4: Results">
+<img src="slide5.png" alt="Slide 5: References">
+</div>
+<h2><span>The</span> references</h2>
+<div class="refs">
+<div><h3>Modular phones</h3><ul>
+<li><b>Hankammer et al. (2016).</b> <a href="https://www.sciencedirect.com/science/article/pii/S2212827116303973">From Phonebloks to Google Project Ara. A case study of the application of sustainable mass customization.</a> <small>Procedia CIRP.</small></li>
+<li><b>Hankammer et al. (2018).</b> <a href="https://www.sciencedirect.com/science/article/abs/pii/S1755581717300627">Are modular and customizable smartphones the future, or doomed to fail?</a> <small>CIRP Journal of Manufacturing Science and Technology.</small></li>
+<li><b>Fraunhofer.</b> <a href="https://publica.fraunhofer.de/entities/publication/c2d43e8c-6e18-4648-bafc-216e5a21d557">Modular products: smartphone design from a circular economy perspective.</a></li>
+<li><b>Ireland, Fredriksson and Vakhitova.</b> <a href="https://www.ansys.com/content/dam/web/academic/education-resources/resources/cellphone-fairphone-case-study-cascpfen24.pdf">How sustainable is my phone? Exploring the Fairphone’s modular design concept.</a> <small>Ansys case study.</small></li>
+<li><b>Engadget (1 Sep 2016).</b> <a href="https://www.engadget.com/2016/09/01/google-suspends-project-ara-reuters/">Google’s Project Ara modular phone is reportedly suspended.</a> <small>Reuters report.</small></li>
+</ul></div>
+<div><h3>Embeddings and similarity</h3><ul>
+<li><b>Mikolov et al. (2013).</b> <a href="https://arxiv.org/abs/1301.3781">Efficient estimation of word representations in vector space.</a> <small>arXiv:1301.3781.</small></li>
+<li><b>Pennington, Socher and Manning (2014).</b> <a href="https://aclanthology.org/D14-1162/">GloVe: global vectors for word representation.</a> <small>EMNLP.</small></li>
+<li><b>Reimers and Gurevych (2019).</b> <a href="https://arxiv.org/abs/1908.10084">Sentence-BERT: sentence embeddings using Siamese BERT-networks.</a> <small>EMNLP-IJCNLP, arXiv:1908.10084.</small></li>
+<li><b>Pathak et al. (2026).</b> <a href="https://ijarsct.co.in/Paper37307.pdf">An AI-driven smartphone recommendation system using RAG, LLMs and multisource price tracking.</a> <small>IJARSCT 6(11), June 2026. DOI 10.48175/IJARSCT-37307.</small></li>
+</ul></div>
+<div><h3>Prompting and tools</h3><ul>
+<li><b>Brown et al. (2020).</b> <a href="https://arxiv.org/abs/2005.14165">Language models are few-shot learners.</a> <small>NeurIPS, arXiv:2005.14165.</small></li>
+<li><b>Wei et al. (2022).</b> <a href="https://arxiv.org/abs/2201.11903">Chain-of-thought prompting elicits reasoning in large language models.</a> <small>NeurIPS, arXiv:2201.11903.</small></li>
+<li><b>Kojima et al. (2022).</b> <a href="https://arxiv.org/abs/2205.11916">Large language models are zero-shot reasoners.</a> <small>arXiv:2205.11916.</small></li>
+<li><b>Previti et al. (2026).</b> <a href="https://arxiv.org/abs/2610.41511">Specification-guided generation for large language models.</a> <small>arXiv:2610.41511, Oct 2026.</small></li>
+<li><b>Tools.</b> Claude, Python, NumPy, matplotlib and Streamlit.</li>
+</ul></div>
+</div>
+<p class="more">Also worth reading on embeddings for recommendation: <a href="https://arxiv.org/abs/1903.09942">Deep recommender engine based on efficient product embeddings neural pipeline</a> and <a href="https://arxiv.org/abs/2308.13050">Multi-BERT for embeddings for recommendation system</a>.</p>
+<p class="more"><a href="/">Back to the Modula app</a></p>
+</main></div></body></html>

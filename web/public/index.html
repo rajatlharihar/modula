@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modula</title>
+<meta name="description" content="Describe how you use a phone. Modula picks the modules and places them on the frame.">
+<style>
+@font-face{font-family:"Restora";src:url(/fonts/RestoraItalic.ttf) format("truetype");font-style:italic;font-display:swap}
+@font-face{font-family:"Outfit";src:url(/fonts/Outfit-Regular.ttf) format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Outfit";src:url(/fonts/Outfit-Medium.ttf) format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Outfit";src:url(/fonts/Outfit-SemiBold.ttf) format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"Typewriter";src:url(/fonts/typewriter.ttf) format("truetype");font-display:swap}
+:root{
+  --paper:#F1F2F4;--card:#F8F9FA;--ink:#10131C;--grey:#8C919E;--line:#D5D8DF;
+  --cobalt:#0047AB;--cobalt-d:#00306F;--cobalt-l:#DCE6F6;--slate:#2A2F3D;--free:#5A6178;
+  --gap:clamp(12px,1.7vw,24px);
+  --h:clamp(56px,9vw,120px);--b:clamp(17px,1.35vw,20px);--l:clamp(12px,.95vw,14px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:"Outfit",system-ui,sans-serif;font-size:var(--b);line-height:1.4;-webkit-font-smoothing:antialiased;min-height:100vh}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* 12 column page: column 1 and column 12 stay empty, content sits on columns 2 to 11 */
+.page{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap)}
+.main{grid-column:2 / 12;padding:clamp(20px,3.5vw,48px) 0 clamp(40px,6vw,80px)}
+.grid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));column-gap:var(--gap);row-gap:clamp(24px,3vw,40px)}
+.c-in{grid-column:span 3}.c-ph{grid-column:span 3}.c-out{grid-column:span 4}
+@media (max-width:1100px){.c-in{grid-column:1 / -1}.c-ph{grid-column:span 5}.c-out{grid-column:span 5}}
+@media (max-width:760px){.c-in,.c-ph,.c-out{grid-column:1 / -1}}
+
+.eyebrow,.lab{font-family:"Typewriter",monospace;font-size:var(--l);letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+h1{font-family:"Restora",serif;font-style:italic;font-weight:400;font-size:var(--h);line-height:1;letter-spacing:-.015em;margin:.18em 0 .12em}
+.lede{max-width:46ch;font-size:calc(var(--b) * 1.15);color:var(--ink)}
+header{margin-bottom:clamp(24px,3.5vw,48px)}
+.note{font-family:"Typewriter",monospace;font-size:var(--l);letter-spacing:.05em;color:var(--grey);line-height:1.5;margin-top:10px}
+
+label.lab{display:block;margin-bottom:8px}
+textarea{width:100%;min-height:9.5rem;resize:vertical;background:var(--card);border:1.5px solid var(--line);border-radius:22px;padding:16px 18px;line-height:1.4}
+textarea:focus{border-color:var(--cobalt);outline:none;box-shadow:0 0 0 3px var(--cobalt-l)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}
+.pill{border:1.5px solid var(--line);background:transparent;border-radius:999px;padding:7px 16px;cursor:pointer;font-size:.9em;transition:.15s}
+.pill:hover{border-color:var(--cobalt);color:var(--cobalt)}
+.pill[aria-pressed="true"]{background:var(--cobalt-l);border-color:var(--cobalt);color:var(--cobalt);font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;border-radius:999px;border:1.5px solid var(--ink);background:transparent;padding:13px 22px;font-weight:500;cursor:pointer;transition:.15s;min-height:48px}
+.btn:hover{border-color:var(--cobalt);color:var(--cobalt)}
+.btn.primary{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+.btn.primary:hover{background:var(--cobalt-d);border-color:var(--cobalt-d);color:#fff}
+.btn[disabled]{opacity:.55;cursor:progress}
+
+details{background:var(--card);border:1.5px solid var(--line);border-radius:22px;margin-top:12px}
+summary{list-style:none;cursor:pointer;padding:14px 18px;font-weight:500;display:flex;align-items:center;gap:10px;min-height:48px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"";width:8px;height:8px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(-45deg);transition:.15s;margin:0 4px 0 2px}
+details[open] summary::before{transform:rotate(45deg)}
+.panel{padding:4px 18px 18px}
+pre{font-family:"Typewriter",monospace;font-size:var(--l);white-space:pre-wrap;word-break:break-word;color:var(--ink)}
+.sl{display:grid;grid-template-columns:minmax(6.5rem,.9fr) 2fr 2.2rem;align-items:center;gap:10px;margin:6px 0}
+.sl span{font-size:.9em}
+.sl output{font-variant-numeric:tabular-nums;text-align:right;font-size:.9em;color:var(--grey)}
+input[type=range]{width:100%;accent-color:var(--cobalt);min-height:28px}
+.num{width:100%;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;font-size:.82em;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+table.t{width:100%;border-collapse:collapse;font-size:.88em}
+table.t th{font-family:"Typewriter",monospace;font-weight:400;font-size:var(--l);letter-spacing:.1em;text-transform:uppercase;color:var(--grey);text-align:left;border-bottom:1.5px solid var(--ink);padding:8px 6px 8px 0}
+table.t td{padding:9px 6px 9px 0;border-bottom:1.5px solid var(--line);vertical-align:top}
+
+/* tabs */
+.tabs{display:inline-flex;gap:4px;padding:4px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);margin-bottom:16px}
+.tab{border:0;background:transparent;border-radius:999px;padding:8px 18px;cursor:pointer;font-weight:500;min-height:40px}
+.tab[aria-selected="true"]{background:var(--cobalt);color:#fff}
+
+/* phone */
+.phone-wrap{container-type:inline-size;width:100%;max-width:420px;margin:0 auto}
+.phone{width:100%;aspect-ratio:470/900;background:var(--ink);border-radius:15cqw;padding:4.6cqw;position:relative}
+.frame{width:100%;height:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(6,minmax(0,1fr));gap:2.5cqw}
+.cell{border:1.5px dashed var(--free);border-radius:10.5cqw;display:flex;align-items:center;justify-content:center;color:var(--free);font-family:"Typewriter",monospace;font-size:3.4cqw;letter-spacing:.1em;text-transform:uppercase}
+.mod{position:relative;border-radius:10.5cqw;background:var(--slate);color:#fff;padding:4.5cqw 5.5cqw;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;animation:pop .35s ease both}
+.mod.b{background:var(--cobalt)}
+.mod .t{font-family:"Restora",serif;font-style:italic;font-size:5.6cqw;line-height:1.1}
+.mod .k{font-family:"Typewriter",monospace;font-size:3.1cqw;letter-spacing:.1em;text-transform:uppercase;color:#B8C3DD}
+.lens{position:absolute;right:4cqw;top:4cqw;width:15cqw;height:15cqw;border-radius:50%;background:#0B0D14;border:1cqw solid #C9CED9;box-shadow:inset 0 0 0 1.4cqw #151926}
+@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.mod{animation:none}}
+.legend{margin-top:14px;text-align:center}
+
+/* results */
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1.5px solid var(--ink);margin-bottom:24px}
+.metrics div{padding:12px 12px 12px 0;border-bottom:1.5px solid var(--line)}
+.metrics b{display:block;font-size:calc(var(--b) * 1.2);font-weight:600;letter-spacing:-.01em;white-space:nowrap}
+@media (max-width:420px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.bars{display:grid;gap:9px;margin-bottom:6px}
+.bar{display:grid;grid-template-columns:minmax(5.2rem,.7fr) 2fr;align-items:center;gap:10px;font-size:.88em}
+.track{position:relative;height:16px;border-radius:8px;background:var(--cobalt-l);overflow:visible}
+.fill{height:100%;border-radius:8px;background:var(--cobalt);transition:width .45s ease}
+.mark{position:absolute;top:-4px;width:3px;height:24px;border-radius:2px;background:var(--ink);transform:translateX(-1.5px);transition:left .45s ease}
+.explain{margin:22px 0 4px;font-size:calc(var(--b) * 1.1);line-height:1.45}
+.warn{background:var(--cobalt-l);border-radius:18px;padding:16px 18px;color:var(--cobalt-d)}
+.actions{display:grid;gap:10px;margin-top:20px}
+.skel{opacity:.5}
+.foot{margin-top:clamp(32px,5vw,64px);padding-top:18px;border-top:1.5px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot a{color:var(--ink);text-decoration-color:var(--cobalt);text-underline-offset:4px}
+</style>
+</head>
+<body>
+<div class="page"><main class="main">
+  <header>
+    <div class="eyebrow">Prompt Engineering and Generative AI</div>
+    <h1>Modula</h1>
+    <p class="lede">Describe how you use a phone. Modula picks the modules and places them on the frame.</p>
+  </header>
+
+  <div class="grid">
+    <section class="c-in" aria-label="Your request">
+      <label class="lab" for="text">How do you use your phone?</label>
+      <textarea id="text" spellcheck="false"></textarea>
+      <div class="lab" style="margin-top:14px" id="exlab">Examples</div>
+      <div class="pills" id="pills" role="group" aria-labelledby="exlab"></div>
+      <button class="btn primary" id="go" type="button">Build my phone</button>
+      <p class="note" id="status" role="status" aria-live="polite"></p>
+
+      <details id="raw"><summary>See what the model returned</summary><div class="panel"><pre id="rawout">No model output yet.</pre></div></details>
+      <details id="pri"><summary>Change the priorities</summary><div class="panel">
+        <div id="sliders"></div>
+        <label class="lab" for="budget" style="margin-top:14px">Budget in rupees</label>
+        <input class="num" id="budget" type="number" min="0" step="1000" inputmode="numeric" placeholder="No limit">
+        <div class="lab" id="mustlab">Modules the phone must include</div>
+        <div class="chips" id="must" role="group" aria-labelledby="mustlab" style="margin-top:8px"></div>
+      </div></details>
+      <details id="why"><summary>See why each module is there</summary><div class="panel"><table class="t"><thead><tr><th>Module</th><th>Price</th><th>Placement</th></tr></thead><tbody id="whybody"></tbody></table></div></details>
+    </section>
+
+    <section class="c-ph" aria-label="The phone">
+      <div class="tabs" role="tablist" id="tabs" aria-label="Build options"></div>
+      <div class="phone-wrap"><div class="phone" id="phone" role="img" aria-label="Back of the phone with the chosen modules"><div class="frame" id="frame"></div></div></div>
+      <p class="note legend" id="legend"></p>
+    </section>
+
+    <section class="c-out" aria-label="Results">
+      <div class="metrics" id="metrics"></div>
+      <div class="bars" id="bars"></div>
+      <p class="note" id="barnote"></p>
+      <p class="explain" id="explain"></p>
+      <p class="note" id="stats"></p>
+      <div class="actions"><button class="btn" id="sku" type="button">Download SKU sheet</button></div>
+    </section>
+  </div>
+
+  <div class="foot note">
+    <span>Group 6 · Aditi R Sankpal, Diya S Ellur, Mahiyu Dasgupta, Nidhi K, Rajat L Harihar</span>
+    <a href="/deck/">Slides and references</a>
+  </div>
+</main></div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const inr = (n) => "₹" + Number(n).toLocaleString("en-IN");
+let meta = null, state = { payload: null, data: null, index: 0, preset: null, label: "" };
+let timer = null;
+
+async function api(path, body) {
+  const res = await fetch(path, body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : undefined);
+  if (!res.ok && res.headers.get("content-type")?.includes("json")) { const j = await res.json(); throw new Error(j.error || res.statusText); }
+  if (!res.ok) throw new Error(res.statusText);
+  return res;
+}
+
+function el(tag, attrs = {}, kids = []) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) { if (k === "text") n.textContent = v; else n.setAttribute(k, v); }
+  for (const c of [].concat(kids)) n.append(c);
+  return n;
+}
+
+async function init() {
+  const res = await api("/api/presets");
+  meta = await res.json();
+  const pills = $("#pills");
+  meta.presets.forEach((p) => {
+    const b = el("button", { class: "pill", type: "button", "aria-pressed": "false", "data-id": p.id, text: p.name });
+    b.onclick = () => choosePreset(p);
+    pills.append(b);
+  });
+  const sl = $("#sliders");
+  meta.dims.forEach((d) => {
+    const out = el("output", { id: "o_" + d.id, text: "0.10" });
+    const inp = el("input", { type: "range", id: "s_" + d.id, min: "0", max: "1", step: "0.05", value: "0.1", "aria-label": d.label });
+    inp.oninput = () => { out.textContent = (+inp.value).toFixed(2); manualChange(); };
+    sl.append(el("div", { class: "sl" }, [el("span", { text: d.label }), inp, out]));
+  });
+  const must = $("#must");
+  meta.modules.forEach((m) => {
+    const c = el("button", { class: "chip", type: "button", "aria-pressed": "false", "data-id": m.id, text: m.name });
+    c.onclick = () => { c.setAttribute("aria-pressed", c.getAttribute("aria-pressed") === "true" ? "false" : "true"); manualChange(); };
+    must.append(c);
+  });
+  $("#budget").oninput = manualChange;
+  $("#go").onclick = buildFromText;
+  $("#text").addEventListener("keydown", (e) => { if ((e.metaKey || e.ctrlKey) && e.key === "Enter") buildFromText(); });
+  $("#sku").onclick = downloadSku;
+  choosePreset(meta.presets[0]);
+}
+
+function choosePreset(p) {
+  $("#text").value = p.text;
+  state.preset = p.id; state.label = p.name;
+  document.querySelectorAll(".pill").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.id === p.id)));
+  run({ preset: p.id });
+}
+
+function buildFromText() {
+  const text = $("#text").value.trim();
+  if (!text) { $("#status").textContent = "Name what you use the phone for, such as photos, games or battery life, or pick an example."; return; }
+  const known = meta.presets.find((p) => p.text === text);
+  state.preset = known ? known.id : null; state.label = known ? known.name : "Custom request";
+  document.querySelectorAll(".pill").forEach((b) => b.setAttribute("aria-pressed", String(!!known && b.dataset.id === known.id)));
+  run(known ? { preset: known.id } : { text });
+}
+
+function manualChange() {
+  clearTimeout(timer);
+  timer = setTimeout(() => {
+    const needs = {}; meta.dims.forEach((d) => (needs[d.id] = +$("#s_" + d.id).value));
+    const must = [...document.querySelectorAll("#must .chip[aria-pressed=true]")].map((c) => c.dataset.id);
+    const budget = $("#budget").value ? +$("#budget").value : null;
+    run({ needs, budget, must }, true);
+  }, 220);
+}
+
+async function run(payload, keepControls = false) {
+  state.payload = payload;
+  const btn = $("#go"); btn.disabled = true; btn.textContent = "Reading your request";
+  document.body.classList.add("skel-on");
+  try {
+    const res = await api("/api/build", payload);
+    const data = await res.json();
+    state.data = data; if (!keepControls || payload.preset || payload.text) state.index = 0;
+    if (!keepControls) syncControls(data);
+    render();
+  } catch (e) {
+    $("#status").textContent = e.message || "Something went wrong. Try again.";
+  } finally {
+    btn.disabled = false; btn.textContent = "Build my phone";
+  }
+}
+
+function syncControls(d) {
+  meta.dims.forEach((x) => { $("#s_" + x.id).value = d.need[x.id]; $("#o_" + x.id).textContent = (+d.need[x.id]).toFixed(2); });
+  $("#budget").value = d.budget || "";
+  document.querySelectorAll("#must .chip").forEach((c) => c.setAttribute("aria-pressed", String(d.must.includes(c.dataset.id))));
+}
+
+function render() {
+  const d = state.data, builds = d.builds;
+  $("#status").textContent = d.note;
+  $("#rawout").textContent = JSON.stringify({ needs: d.need, budget: d.budget, must_have: d.must, source: d.source }, null, 2);
+
+  const tabs = $("#tabs"); tabs.replaceChildren();
+  ["Best", "Second", "Third"].slice(0, builds.length).forEach((name, i) => {
+    const t = el("button", { class: "tab", role: "tab", type: "button", "aria-selected": String(i === state.index), text: name });
+    t.onclick = () => { state.index = i; render(); };
+    tabs.append(t);
+  });
+
+  const frame = $("#frame"); frame.replaceChildren();
+  const b = builds[state.index];
+  if (!b) {
+    $("#metrics").replaceChildren(); $("#bars").replaceChildren(); $("#explain").replaceChildren(el("div", { class: "warn", text: d.error }));
+    $("#stats").textContent = ""; $("#legend").textContent = ""; $("#barnote").textContent = ""; $("#whybody").replaceChildren();
+    for (let i = 0; i < 12; i++) frame.append(el("div", { class: "cell", text: "Free" }));
+    return;
+  }
+  const taken = new Set();
+  b.modules.forEach((m) => { for (let c = m.x; c < m.x + m.w; c++) for (let r = m.y; r < m.y + m.h; r++) taken.add(c + "," + r); });
+  for (let r = 0; r < 6; r++) for (let c = 0; c < 2; c++) if (!taken.has(c + "," + r)) {
+    const f = el("div", { class: "cell", text: "Free" }); f.style.gridArea = `${r + 1} / ${c + 1}`; frame.append(f);
+  }
+  b.modules.forEach((m) => {
+    const n = el("div", { class: "mod" + (m.bright ? " b" : "") }, [
+      el("div", { class: "t", text: m.short }), el("div", { class: "k", text: m.category })]);
+    if (m.cat === "camera" || m.cat === "aux") n.prepend(el("div", { class: "lens" }));
+    n.style.gridArea = `${m.y + 1} / ${m.x + 1} / span ${m.h} / span ${m.w}`;
+    frame.append(n);
+  });
+  $("#legend").textContent = d.builds.some((x) => x.modules.some((m) => m.bright)) ? "Blue modules serve your top priority." : "";
+
+  $("#metrics").replaceChildren(...[["Price", inr(b.price)], ["Weight", b.mass + " g"], ["Mixed use", b.hours.toFixed(1) + " h"], ["Match", b.score.toFixed(2)]]
+    .map(([k, v]) => el("div", {}, [el("span", { class: "lab", text: k }), el("b", { text: v })])));
+
+  $("#bars").replaceChildren(...meta.dims.map((x) => {
+    const fill = el("div", { class: "fill" }); fill.style.width = (b.vec[x.id] * 100) + "%";
+    const mark = el("div", { class: "mark" }); mark.style.left = (d.need[x.id] * 100) + "%";
+    return el("div", { class: "bar" }, [el("span", { text: x.label }), el("div", { class: "track" }, [fill, mark])]);
+  }));
+  $("#barnote").textContent = "Blue bar: what this build delivers. Dark mark: what you need.";
+  $("#explain").textContent = b.explanation;
+  $("#stats").textContent = `Searched ${d.stats.possible.toLocaleString("en-IN")} combinations. ${d.stats.fit_frame.toLocaleString("en-IN")} fit the frame, and ${d.stats.feasible.toLocaleString("en-IN")} meet your limits.`;
+  $("#whybody").replaceChildren(...b.modules.map((m) => el("tr", {}, [el("td", { text: m.name }), el("td", { text: inr(m.price) }), el("td", { text: m.placement })])));
+}
+
+async function downloadSku() {
+  const btn = $("#sku"); btn.disabled = true; const old = btn.textContent; btn.textContent = "Preparing the sheet";
+  try {
+    const res = await api("/api/sku", { ...state.payload, index: state.index, label: state.label });
+    const blob = await res.blob(), a = el("a", { href: URL.createObjectURL(blob), download: "Modula-SKU.xlsx" });
+    document.body.append(a); a.click(); a.remove();
+  } catch (e) { $("#status").textContent = e.message; }
+  finally { btn.disabled = false; btn.textContent = old; }
+}
+
+init().catch((e) => { $("#status").textContent = "Could not load. " + e.message; });
+</script>
+</body>
+</html>

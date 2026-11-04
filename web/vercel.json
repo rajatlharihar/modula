@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/*.py": { "includeFiles": "{modula,eval}/**", "maxDuration": 30 }
+  },
+  "headers": [
+    { "source": "/fonts/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }
+  ]
+}

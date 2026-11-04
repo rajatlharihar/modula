@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 
 from modula.sku import workbook_bytes
+from modula.template import template_explanation
 from modula import engine, figures, llm
 from modula.catalogue import CATEGORY_LABELS, DIM_LABELS, DIMS, MODULE_BY_ID, PLACEMENT_RULES
 from modula.data import load_personas, load_reply
@@ -111,19 +112,6 @@ def sync_example():
     text = st.session_state.get("prompt", "").strip()
     if not any(p["text"] == text for p in presets().values()):
         st.session_state["example"] = None
-
-
-def template_explanation(build, need):
-    ranked = sorted(DIMS, key=lambda d: -need.get(d, 0))
-    weakest = min(DIMS, key=lambda d: build.config.vec[d])
-    if need[ranked[0]] == need[ranked[-1]]:
-        opening = "No priority stands out, so this is a general build"
-    else:
-        opening = f"This build puts {DIM_LABELS[ranked[0]].lower()} and {DIM_LABELS[ranked[1]].lower()} first"
-    return (f"{opening}, "
-            f"at ₹{build.config.price:,} and {round(build.config.mass)} g, with about "
-            f"{build.config.hours:.1f} hours of mixed use. It gives up the most on "
-            f"{DIM_LABELS[weakest].lower()}.")
 
 
 # ---- First load: open on a worked example, with no model call ----

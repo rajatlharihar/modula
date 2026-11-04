@@ -1,6 +1,9 @@
 """The phone drawing and the need-versus-delivered chart, both in matplotlib."""
-from matplotlib.figure import Figure
-from matplotlib.patches import Circle, FancyBboxPatch, Rectangle
+try:
+    from matplotlib.figure import Figure
+    from matplotlib.patches import Circle, FancyBboxPatch, Rectangle
+except ImportError:  # the web build has no matplotlib, only top_categories is used
+    Figure = Circle = FancyBboxPatch = Rectangle = None
 
 from .catalogue import CATEGORY_LABELS, DIM_LABELS, DIMS, GRID_COLS, GRID_ROWS
 
@@ -15,10 +18,14 @@ FREE = "#5A6178"
 PINE, SAGE, MARIGOLD = INK, SLATE, COBALT  # old names kept for any importers
 
 from pathlib import Path
-from matplotlib import font_manager
 
-for _f in (Path(__file__).resolve().parent.parent / "static").glob("Outfit-*.ttf"):
-    font_manager.fontManager.addfont(str(_f))
+try:
+    from matplotlib import font_manager
+
+    for _f in (Path(__file__).resolve().parent.parent / "static").glob("Outfit-*.ttf"):
+        font_manager.fontManager.addfont(str(_f))
+except ImportError:
+    pass
 FONT = ["Outfit", "Segoe UI", "DejaVu Sans"]
 
 # Which module categories serve each axis. Portability is a property of the whole phone.
