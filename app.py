@@ -2,6 +2,7 @@
 import pandas as pd
 import streamlit as st
 
+from modula.sku import workbook_bytes
 from modula import engine, figures, llm
 from modula.catalogue import CATEGORY_LABELS, DIM_LABELS, DIMS, MODULE_BY_ID, PLACEMENT_RULES
 from modula.data import load_personas, load_reply
@@ -175,6 +176,14 @@ with middle:
         st.caption("Yellow modules serve your top priority.")
 
 # ---- Right column contents ----
+
+with middle:
+    if build:
+        label = f"{st.session_state.get('example') or 'Custom request'} ({labels[index]})"
+        st.download_button("Download SKU sheet", workbook_bytes([(label, labels[index], build)]),
+                           file_name="Modula-SKU.xlsx",
+                           mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                           width="stretch")
 
 with metrics:
     if build:
